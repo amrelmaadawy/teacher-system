@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
+import 'package:teacher_system/core/utils/app_size.dart';
 
 class GraduatedHatWidget extends StatelessWidget {
   const GraduatedHatWidget({
@@ -14,7 +15,7 @@ class GraduatedHatWidget extends StatelessWidget {
       height: 70,
       decoration: BoxDecoration(
         color: lightBottonColor,
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(defBorderRadius),
       ),
       child: Icon(
         Icons.school_outlined,

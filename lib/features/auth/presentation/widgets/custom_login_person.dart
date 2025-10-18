@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
+import 'package:teacher_system/core/utils/app_size.dart';
 
 class CutsomLoginPerson extends StatelessWidget {
   const CutsomLoginPerson({super.key, required this.title, required this.icon});
@@ -11,7 +12,7 @@ class CutsomLoginPerson extends StatelessWidget {
       width: MediaQuery.of(context).size.width * 0.4,
       height: 150,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(defBorderRadius),
         border: Border.all(color: lightBordersColor, width: 1.5),
       ),
       child: Column(

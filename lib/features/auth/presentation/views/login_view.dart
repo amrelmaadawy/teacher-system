@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
+import 'package:teacher_system/core/utils/app_size.dart';
 import 'package:teacher_system/features/auth/presentation/views/create_account_view.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/graduated_hat_widget.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/login_card.dart';
@@ -14,7 +15,7 @@ class LoginView extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.all(15.0),
+            padding: const EdgeInsets.all(defPadding),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

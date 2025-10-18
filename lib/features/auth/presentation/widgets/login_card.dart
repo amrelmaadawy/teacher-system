@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
+import 'package:teacher_system/core/utils/app_size.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_login_person.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_text_form_field.dart';
 import 'package:teacher_system/generated/l10n.dart';
@@ -26,7 +27,7 @@ class _LoginCardState extends State<LoginCard> {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       child: Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(defPadding),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
 
