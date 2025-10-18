@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teacher_system/core/utils/app_colors.dart';
 
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
@@ -23,7 +24,6 @@ class CustomTextFormField extends StatelessWidget {
   final bool obscureText;
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -31,18 +31,17 @@ class CustomTextFormField extends StatelessWidget {
         Text(text, style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
         SizedBox(height: 10),
         TextFormField(
-        
           obscureText: obscureText,
           controller: controller,
           validator: validator,
           keyboardType: keyboardType,
-          cursorColor: Color(0xff57a4df),
+          cursorColor: lightBottonColor,
           decoration: InputDecoration(
             prefixIcon: prefixIcon,
             suffixIcon: suffixIcon,
             labelText: labelText,
             labelStyle: TextStyle(
-              color: Color(0xff64748b),
+              color: lightSubTextColor,
               fontWeight: FontWeight.w500,
             ),
             filled: true,
@@ -53,13 +52,11 @@ class CustomTextFormField extends StatelessWidget {
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: BorderSide(color: Color(0xff64748b)),
+              borderSide: BorderSide(color: lightBordersColor),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: BorderSide(
-                color: isDark ? Colors.black : Colors.white,
-              ),
+              borderSide: BorderSide(color: lightBordersColor),
             ),
           ),
         ),

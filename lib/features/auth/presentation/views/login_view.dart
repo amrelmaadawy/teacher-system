@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_login_person.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_text_form_field.dart';
 
@@ -16,7 +17,6 @@ class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff0f9ff),
       body: SafeArea(
         child: Center(
           child: Padding(
@@ -28,12 +28,12 @@ class _LoginViewState extends State<LoginView> {
                   width: 70,
                   height: 70,
                   decoration: BoxDecoration(
-                    color: Color(0xff57a4df),
+                    color: lightBottonColor,
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Icon(
                     Icons.school_outlined,
-                    color: Colors.white,
+                    color: lightWhiteColor,
                     size: 40,
                   ),
                 ),
@@ -44,7 +44,7 @@ class _LoginViewState extends State<LoginView> {
                 Text(
                   'Sign in to continue managing your Students',
 
-                  style: TextStyle(fontSize: 16, color: Color(0xff64748b)),
+                  style: TextStyle(fontSize: 16, color: lightSubTextColor),
                 ),
                 Card(
                   shape: RoundedRectangleBorder(
@@ -81,7 +81,7 @@ class _LoginViewState extends State<LoginView> {
                         CustomTextFormField(
                           prefixIcon: Icon(
                             Icons.email_outlined,
-                            color: Color(0xff64748b),
+                            color: lightSubTextColor,
                           ),
                           controller: emailController,
                           text: 'Email or Phone',
@@ -96,11 +96,11 @@ class _LoginViewState extends State<LoginView> {
                           obscureText: true,
                           suffixIcon: Icon(
                             Icons.visibility_off_outlined,
-                            color: Color(0xff64748b),
+                            color: lightSubTextColor,
                           ),
                           prefixIcon: Icon(
                             Icons.lock_outline,
-                            color: Color(0xff64748b),
+                            color: lightSubTextColor,
                           ),
                           controller: passwordController,
                           text: 'password',
@@ -117,7 +117,7 @@ class _LoginViewState extends State<LoginView> {
                           child: Text(
                             'Forgot Password?',
                             style: TextStyle(
-                              color: Color(0xff82bcdd),
+                              color: lightTextBottonColor,
                               fontWeight: FontWeight.w600,
                               fontSize: 15,
                             ),
@@ -130,12 +130,12 @@ class _LoginViewState extends State<LoginView> {
                           child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Color(0xff57a4df),
+                              backgroundColor: lightBottonColor,
                             ),
                             child: Text(
                               'Sign In',
                               style: TextStyle(
-                                color: Colors.white,
+                                color: lightWhiteColor,
                                 fontWeight: FontWeight.w600,
                                 fontSize: 16,
                               ),
@@ -152,12 +152,12 @@ class _LoginViewState extends State<LoginView> {
                   children: [
                     Text(
                       'New To Teacher System?',
-                      style: TextStyle(color: Color(0xff64748b), fontSize: 16),
+                      style: TextStyle(color: lightSubTextColor, fontSize: 16),
                     ),
                     Text(
                       'Sign Up',
                       style: TextStyle(
-                        color: Color(0xff57a4df),
+                        color: lightTextBottonColor,
                         fontWeight: FontWeight.w600,
                         fontSize: 16,
                       ),

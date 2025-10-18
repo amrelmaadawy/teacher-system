@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teacher_system/core/utils/app_colors.dart';
 
 class CutsomLoginPerson extends StatelessWidget {
   const CutsomLoginPerson({super.key, required this.title, required this.icon});
@@ -11,16 +12,13 @@ class CutsomLoginPerson extends StatelessWidget {
       height: 150,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        border: Border.all(color: Color(0xffadd1e6), width: 1.5),
+        border: Border.all(color: lightBordersColor, width: 1.5),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(icon, color: Color(0xff64748b), size: 30),
-          Text(
-            title,
-            style: TextStyle(color: Color(0xff64748b), fontSize: 16),
-          ),
+          Icon(icon, color: lightSubTextColor, size: 30),
+          Text(title, style: TextStyle(color: lightSubTextColor, fontSize: 16)),
         ],
       ),
     );
