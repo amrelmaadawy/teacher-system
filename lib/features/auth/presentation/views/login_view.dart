@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
+import 'package:teacher_system/features/auth/presentation/views/create_account_view.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/graduated_hat_widget.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/login_card.dart';
 import 'package:teacher_system/generated/l10n.dart';
@@ -36,12 +37,22 @@ class LoginView extends StatelessWidget {
                       S.of(context).NewToTeacherSystem,
                       style: TextStyle(color: lightSubTextColor, fontSize: 16),
                     ),
-                    Text(
-                      S.of(context).CreateAccount,
-                      style: TextStyle(
-                        color: lightTextBottonColor,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 16,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => CreateAccountView(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        S.of(context).CreateAccount,
+                        style: TextStyle(
+                          color: lightTextBottonColor,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                   ],

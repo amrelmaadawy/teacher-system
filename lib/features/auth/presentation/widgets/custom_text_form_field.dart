@@ -24,7 +24,6 @@ class CustomTextFormField extends StatelessWidget {
   final bool obscureText;
   @override
   Widget build(BuildContext context) {
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -44,7 +43,7 @@ class CustomTextFormField extends StatelessWidget {
               color: lightSubTextColor,
               fontWeight: FontWeight.w500,
             ),
-            filled: true,
+            filled: false,
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 16,
               vertical: 14,
