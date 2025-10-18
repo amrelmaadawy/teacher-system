@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CutsomLoginPerson extends StatelessWidget {
-  const CutsomLoginPerson({super.key});
-
+  const CutsomLoginPerson({super.key, required this.title, required this.icon});
+  final String title;
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,9 +16,9 @@ class CutsomLoginPerson extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.person_outlined, color: Color(0xff64748b), size: 30),
+          Icon(icon, color: Color(0xff64748b), size: 30),
           Text(
-            'Teacher',
+            title,
             style: TextStyle(color: Color(0xff64748b), fontSize: 16),
           ),
         ],
