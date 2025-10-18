@@ -53,6 +53,111 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `Welcome Back`
+  String get WelcomeBack {
+    return Intl.message(
+      'Welcome Back',
+      name: 'WelcomeBack',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign in to continue managing your Students`
+  String get SignintocontinuemanagingyourStudents {
+    return Intl.message(
+      'Sign in to continue managing your Students',
+      name: 'SignintocontinuemanagingyourStudents',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login as`
+  String get Loginas {
+    return Intl.message('Login as', name: 'Loginas', desc: '', args: []);
+  }
+
+  /// `teacher`
+  String get teacher {
+    return Intl.message('teacher', name: 'teacher', desc: '', args: []);
+  }
+
+  /// `assistant`
+  String get assistant {
+    return Intl.message('assistant', name: 'assistant', desc: '', args: []);
+  }
+
+  /// `Email or Phone`
+  String get EmailorPhone {
+    return Intl.message(
+      'Email or Phone',
+      name: 'EmailorPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Email or Phone`
+  String get EnterEmailorPhone {
+    return Intl.message(
+      'Enter Your Email or Phone',
+      name: 'EnterEmailorPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get Password {
+    return Intl.message('Password', name: 'Password', desc: '', args: []);
+  }
+
+  /// `Enter Your Password`
+  String get EnterPassword {
+    return Intl.message(
+      'Enter Your Password',
+      name: 'EnterPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot Password?`
+  String get ForgotPassword {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'ForgotPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign In`
+  String get SignIn {
+    return Intl.message('Sign In', name: 'SignIn', desc: '', args: []);
+  }
+
+  /// `New To Teacher System?`
+  String get NewToTeacherSystem {
+    return Intl.message(
+      'New To Teacher System?',
+      name: 'NewToTeacherSystem',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create Account`
+  String get CreateAccount {
+    return Intl.message(
+      'Create Account',
+      name: 'CreateAccount',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

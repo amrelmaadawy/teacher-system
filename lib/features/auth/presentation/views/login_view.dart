@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_login_person.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_text_form_field.dart';
+import 'package:teacher_system/generated/l10n.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -38,11 +39,11 @@ class _LoginViewState extends State<LoginView> {
                   ),
                 ),
                 Text(
-                  'Welcome Back',
+                  S.of(context).WelcomeBack,
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
                 ),
                 Text(
-                  'Sign in to continue managing your Students',
+                  S.of(context).SignintocontinuemanagingyourStudents,
 
                   style: TextStyle(fontSize: 16, color: lightSubTextColor),
                 ),
@@ -57,7 +58,7 @@ class _LoginViewState extends State<LoginView> {
 
                       children: [
                         Text(
-                          'Login as',
+                          S.of(context).Loginas,
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
@@ -68,11 +69,11 @@ class _LoginViewState extends State<LoginView> {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             CutsomLoginPerson(
-                              title: 'teacer',
+                              title: S.of(context).teacher,
                               icon: Icons.person_outlined,
                             ),
                             CutsomLoginPerson(
-                              title: 'assistant',
+                              title: S.of(context).assistant,
                               icon: Icons.manage_accounts_outlined,
                             ),
                           ],
@@ -84,8 +85,8 @@ class _LoginViewState extends State<LoginView> {
                             color: lightSubTextColor,
                           ),
                           controller: emailController,
-                          text: 'Email or Phone',
-                          labelText: 'Enter Your email or phone',
+                          text: S.of(context).EmailorPhone,
+                          labelText: S.of(context).EnterEmailorPhone,
                           validator: (String? p1) {
                             return null;
                           },
@@ -103,8 +104,8 @@ class _LoginViewState extends State<LoginView> {
                             color: lightSubTextColor,
                           ),
                           controller: passwordController,
-                          text: 'password',
-                          labelText: 'Enter Your password',
+                          text: S.of(context).Password,
+                          labelText: S.of(context).EnterPassword,
                           validator: (String? p1) {
                             return null;
                           },
@@ -115,7 +116,7 @@ class _LoginViewState extends State<LoginView> {
                         Align(
                           alignment: Alignment.centerRight,
                           child: Text(
-                            'Forgot Password?',
+                            S.of(context).ForgotPassword,
                             style: TextStyle(
                               color: lightTextBottonColor,
                               fontWeight: FontWeight.w600,
@@ -133,7 +134,7 @@ class _LoginViewState extends State<LoginView> {
                               backgroundColor: lightBottonColor,
                             ),
                             child: Text(
-                              'Sign In',
+                              S.of(context).SignIn,
                               style: TextStyle(
                                 color: lightWhiteColor,
                                 fontWeight: FontWeight.w600,
@@ -151,11 +152,11 @@ class _LoginViewState extends State<LoginView> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'New To Teacher System?',
+                      S.of(context).NewToTeacherSystem,
                       style: TextStyle(color: lightSubTextColor, fontSize: 16),
                     ),
                     Text(
-                      'Sign Up',
+                      S.of(context).CreateAccount,
                       style: TextStyle(
                         color: lightTextBottonColor,
                         fontWeight: FontWeight.w600,

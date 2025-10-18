@@ -1,4 +1,29 @@
 {
-    "@@locale": ""
-    
+    "@@locale": "",
+    "WelcomeBack":"Welcome Back",
+    "@WelcomeBack": {},
+    "SignintocontinuemanagingyourStudents":"Sign in to continue managing your Students",
+    "@SignintocontinuemanagingyourStudents": {},
+    "Loginas":"Login as",
+    "@Loginas": {},
+    "teacher":"teacher",
+    "@teacher": {},
+    "assistant":"assistant",
+    "@assistant": {},
+    "EmailorPhone":"Email or Phone",
+    "@EmailorPhone": {},
+    "EnterEmailorPhone":"Enter Your Email or Phone",
+    "@EnterEmailorPhone": {},
+    "Password":"Password",
+    "@Password": {},
+    "EnterPassword":"Enter Your Password",
+    "@EnterPassword": {},
+    "ForgotPassword":"Forgot Password?",
+    "@ForgotPassword": {},
+    "SignIn":"Sign In",
+    "@SignIn": {},
+    "NewToTeacherSystem":"New To Teacher System?",
+    "@NewToTeacherSystem": {},
+    "CreateAccount":"Create Account",
+    "@CreateAccount": {}
 }
