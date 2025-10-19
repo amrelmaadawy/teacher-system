@@ -268,6 +268,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Send Reset Link`
+  String get SendResetLink {
+    return Intl.message(
+      'Send Reset Link',
+      name: 'SendResetLink',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

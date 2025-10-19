@@ -58,6 +58,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "Password": MessageLookupByLibrary.simpleMessage("Password"),
     "PhoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
     "Registeras": MessageLookupByLibrary.simpleMessage("Register as"),
+    "SendResetLink": MessageLookupByLibrary.simpleMessage("Send Reset Link"),
     "SignIn": MessageLookupByLibrary.simpleMessage("Sign In"),
     "SignintocontinuemanagingyourStudents":
         MessageLookupByLibrary.simpleMessage(

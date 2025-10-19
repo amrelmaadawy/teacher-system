@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/core/utils/app_size.dart';
+import 'package:teacher_system/features/auth/presentation/views/forgot_password_view.dart';
+import 'package:teacher_system/features/auth/presentation/widgets/custom_elevated_button.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_login_person.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_text_form_field.dart';
 import 'package:teacher_system/generated/l10n.dart';
@@ -83,36 +85,27 @@ class _LoginCardState extends State<LoginCard> {
               keyboardType: TextInputType.visiblePassword,
             ),
             SizedBox(height: 10),
-            Align(
-              alignment: Alignment.centerRight,
-              child: Text(
-                S.of(context).ForgotPassword,
-                style: TextStyle(
-                  color: lightTextBottonColor,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 15,
-                ),
-              ),
-            ),
-            SizedBox(height: 10),
-            SizedBox(
-              width: double.infinity,
-              height: 50,
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: lightBottonColor,
-                ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ForgotPasswordView()),
+                );
+              },
+              child: Align(
+                alignment: Alignment.centerRight,
                 child: Text(
-                  S.of(context).SignIn,
+                  S.of(context).ForgotPassword,
                   style: TextStyle(
-                    color: lightWhiteColor,
+                    color: lightTextBottonColor,
                     fontWeight: FontWeight.w600,
-                    fontSize: 16,
+                    fontSize: 15,
                   ),
                 ),
               ),
             ),
+            SizedBox(height: 10),
+            CustomElevatedButton(text: S.of(context).SignIn, onPressed: () {}),
           ],
         ),
       ),

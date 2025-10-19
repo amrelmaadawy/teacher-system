@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/core/utils/app_size.dart';
+import 'package:teacher_system/features/auth/presentation/widgets/custom_elevated_button.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_login_person.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_text_form_field.dart';
 import 'package:teacher_system/generated/l10n.dart';
@@ -31,7 +32,9 @@ class _CreateAccountCardState extends State<CreateAccountCard> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(defBorderRadius),
+      ),
       child: Padding(
         padding: const EdgeInsets.all(defPadding),
         child: Column(
@@ -129,24 +132,7 @@ class _CreateAccountCardState extends State<CreateAccountCard> {
             ),
 
             SizedBox(height: 10),
-            SizedBox(
-              width: double.infinity,
-              height: 50,
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: lightBottonColor,
-                ),
-                child: Text(
-                  S.of(context).CreateAccount,
-                  style: TextStyle(
-                    color: lightWhiteColor,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
-                  ),
-                ),
-              ),
-            ),
+            CustomElevatedButton(text:  S.of(context).CreateAccount, onPressed: () {  },),
           ],
         ),
       ),

@@ -50,5 +50,7 @@
     "ConfirmYourPassword":"Confirm Your Password",
     "@ConfirmYourPassword": {},
     "AlreadyHaveAnAccount":"Already Have An Account?",
-    "@AlreadyHaveAnAccount": {}
+    "@AlreadyHaveAnAccount": {},
+     "SendResetLink":"Send Reset Link",
+    "@SendResetLink": {}
 }
