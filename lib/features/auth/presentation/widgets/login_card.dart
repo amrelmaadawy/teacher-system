@@ -5,6 +5,7 @@ import 'package:teacher_system/features/auth/presentation/views/forgot_password_
 import 'package:teacher_system/features/auth/presentation/widgets/custom_elevated_button.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_login_person.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_text_form_field.dart';
+import 'package:teacher_system/features/layout/presentation/view/layout_view.dart';
 import 'package:teacher_system/generated/l10n.dart';
 
 class LoginCard extends StatefulWidget {
@@ -105,7 +106,15 @@ class _LoginCardState extends State<LoginCard> {
               ),
             ),
             SizedBox(height: 10),
-            CustomElevatedButton(text: S.of(context).SignIn, onPressed: () {}),
+            CustomElevatedButton(
+              text: S.of(context).SignIn,
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => LayoutView()),
+                );
+              },
+            ),
           ],
         ),
       ),
