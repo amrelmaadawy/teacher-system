@@ -4,6 +4,7 @@ import 'package:teacher_system/features/attendance/presentation/views/attendance
 import 'package:teacher_system/features/home/presentation/views/home_view.dart';
 import 'package:teacher_system/features/payments/presentation/views/payments_view.dart';
 import 'package:teacher_system/features/students/presentation/views/students_view.dart';
+import 'package:teacher_system/generated/l10n.dart';
 
 class LayoutView extends StatefulWidget {
   const LayoutView({super.key});
@@ -21,11 +22,11 @@ class _HomeScreenState extends State<LayoutView> {
     AttendanceView(),
     PaymentsView(),
   ];
-  final List<Widget> titles = [
-    Text('DashBoard'),
-    Text('Students'),
-    Text('Attendance'),
-    Text('Payments'),
+  late List<Widget> titles = [
+    Text(S.of(context).DashBoard),
+    Text(S.of(context).Students),
+    Text(S.of(context).Attendance),
+    Text(S.of(context).Payments),
   ];
   @override
   Widget build(BuildContext context) {
@@ -47,22 +48,22 @@ class _HomeScreenState extends State<LayoutView> {
         items: [
           SalomonBottomBarItem(
             icon: const Icon(Icons.dashboard_outlined),
-            title: const Text("Dashboard"),
+            title:  Text(S.of(context).DashBoard),
             selectedColor: Colors.blue,
           ),
           SalomonBottomBarItem(
             icon: const Icon(Icons.people_outline),
-            title: const Text("Students"),
+            title:  Text(S.of(context).Students),
             selectedColor: Colors.purple,
           ),
           SalomonBottomBarItem(
             icon: const Icon(Icons.check_circle_outline),
-            title: const Text("Attendance"),
+            title:  Text(S.of(context).Attendance),
             selectedColor: Colors.green,
           ),
           SalomonBottomBarItem(
             icon: const Icon(Icons.payments_outlined),
-            title: const Text("Payments"),
+            title:  Text(S.of(context).Payments),
             selectedColor: Colors.orange,
           ),
         ],
@@ -71,7 +72,6 @@ class _HomeScreenState extends State<LayoutView> {
   }
 }
 
-// صفحات تجريبية مؤقتة
 
 
 

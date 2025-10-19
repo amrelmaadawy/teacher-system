@@ -288,6 +288,26 @@ class S {
       args: [],
     );
   }
+
+  /// `DashBoard`
+  String get DashBoard {
+    return Intl.message('DashBoard', name: 'DashBoard', desc: '', args: []);
+  }
+
+  /// `Students`
+  String get Students {
+    return Intl.message('Students', name: 'Students', desc: '', args: []);
+  }
+
+  /// `Attendance`
+  String get Attendance {
+    return Intl.message('Attendance', name: 'Attendance', desc: '', args: []);
+  }
+
+  /// `Payments`
+  String get Payments {
+    return Intl.message('Payments', name: 'Payments', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

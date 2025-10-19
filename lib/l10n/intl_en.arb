@@ -54,6 +54,13 @@
     "SendResetLink":"Send Reset Link",
     "@SendResetLink": {},
      "NoWorriesEnterYourEmailorPhoneandwellSendYouaResetLink":"No worries! Enter your email or phone and we will send you a reset link",
-    "@NoWorriesEnterYourEmailorPhoneandwellSendYouaResetLink": {}
-    
+    "@NoWorriesEnterYourEmailorPhoneandwellSendYouaResetLink": {},
+    "DashBoard":"DashBoard",
+    "@DashBoard": {},
+    "Students":"Students",
+    "@Students": {},
+    "Attendance":"Attendance",
+    "@Attendance": {},
+    "Payments":"Payments",
+    "@Payments": {}
 }

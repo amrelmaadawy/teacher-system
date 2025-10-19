@@ -25,12 +25,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "AlreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Already Have An Account?",
     ),
+    "Attendance": MessageLookupByLibrary.simpleMessage("Attendance"),
     "ConfirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "ConfirmYourPassword": MessageLookupByLibrary.simpleMessage(
       "Confirm Your Password",
     ),
     "CreateAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "CreatePassword": MessageLookupByLibrary.simpleMessage("Create a Password"),
+    "DashBoard": MessageLookupByLibrary.simpleMessage("DashBoard"),
     "EmailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
     "EmailorPhone": MessageLookupByLibrary.simpleMessage("Email or Phone"),
     "EnterEmailAddress": MessageLookupByLibrary.simpleMessage(
@@ -60,6 +62,7 @@ class MessageLookup extends MessageLookupByLibrary {
           "No worries! Enter your email or phone and we will send you a reset link",
         ),
     "Password": MessageLookupByLibrary.simpleMessage("Password"),
+    "Payments": MessageLookupByLibrary.simpleMessage("Payments"),
     "PhoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
     "Registeras": MessageLookupByLibrary.simpleMessage("Register as"),
     "SendResetLink": MessageLookupByLibrary.simpleMessage("Send Reset Link"),
@@ -68,6 +71,7 @@ class MessageLookup extends MessageLookupByLibrary {
         MessageLookupByLibrary.simpleMessage(
           "Sign in to continue managing your Students",
         ),
+    "Students": MessageLookupByLibrary.simpleMessage("Students"),
     "WelcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
     "assistant": MessageLookupByLibrary.simpleMessage("assistant"),
     "teacher": MessageLookupByLibrary.simpleMessage("teacher"),
