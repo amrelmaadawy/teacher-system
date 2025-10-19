@@ -24,7 +24,7 @@ class CreateAccountView extends StatelessWidget {
                   GraduatedHatWidget(),
                   SizedBox(height: 10),
                   Text(
-                    'Create Account',
+                    S.of(context).CreateAccount,
                     style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.w500,
@@ -34,7 +34,7 @@ class CreateAccountView extends StatelessWidget {
                   SizedBox(height: 10),
 
                   Text(
-                    'Join us and start managing your students',
+                    S.of(context).Joinusandstartmanagingyourstudents,
 
                     style: TextStyle(fontSize: 16, color: lightSubTextColor),
                   ),
@@ -51,7 +51,7 @@ class CreateAccountView extends StatelessWidget {
 
                         children: [
                           Text(
-                            'Register as',
+                            S.of(context).Registeras,
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: 16,
@@ -79,8 +79,8 @@ class CreateAccountView extends StatelessWidget {
                               color: lightSubTextColor,
                             ),
                             controller: emailController,
-                            text: 'Full Name',
-                            labelText: 'Enter Full Name',
+                            text: S.of(context).FullName,
+                            labelText: S.of(context).EnterFullName,
                             validator: (String? p1) {
                               return null;
                             },
@@ -93,8 +93,8 @@ class CreateAccountView extends StatelessWidget {
                               color: lightSubTextColor,
                             ),
                             controller: emailController,
-                            text: 'Email Address',
-                            labelText: 'Enter Email Address',
+                            text: S.of(context).EmailAddress,
+                            labelText: S.of(context).EnterEmailAddress,
                             validator: (String? p1) {
                               return null;
                             },
@@ -107,8 +107,8 @@ class CreateAccountView extends StatelessWidget {
                               color: lightSubTextColor,
                             ),
                             controller: emailController,
-                            text: 'Phone Number',
-                            labelText: 'Enter Phone Number',
+                            text: S.of(context).PhoneNumber,
+                            labelText: S.of(context).EnterPhoneNumber,
                             validator: (String? p1) {
                               return null;
                             },
@@ -127,7 +127,7 @@ class CreateAccountView extends StatelessWidget {
                             ),
                             controller: passwordController,
                             text: S.of(context).Password,
-                            labelText: 'Create a Password',
+                            labelText: S.of(context).CreatePassword,
                             validator: (String? p1) {
                               return null;
                             },
@@ -146,8 +146,8 @@ class CreateAccountView extends StatelessWidget {
                               color: lightSubTextColor,
                             ),
                             controller: passwordController,
-                            text: 'Confirm Password',
-                            labelText: 'Confirm Your Password',
+                            text: S.of(context).ConfirmPassword,
+                            labelText: S.of(context).ConfirmYourPassword,
                             validator: (String? p1) {
                               return null;
                             },
@@ -165,7 +165,7 @@ class CreateAccountView extends StatelessWidget {
                                 backgroundColor: lightBottonColor,
                               ),
                               child: Text(
-                                'Create Account',
+                                S.of(context).CreateAccount,
                                 style: TextStyle(
                                   color: lightWhiteColor,
                                   fontWeight: FontWeight.w600,
@@ -183,7 +183,7 @@ class CreateAccountView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Already have an account?',
+                        S.of(context).AlreadyHaveAnAccount,
                         style: TextStyle(
                           color: lightSubTextColor,
                           fontSize: 16,
@@ -194,7 +194,7 @@ class CreateAccountView extends StatelessWidget {
                           Navigator.pop(context);
                         },
                         child: Text(
-                          'Sign In',
+                          S.of(context).SignIn,
                           style: TextStyle(
                             color: lightTextBottonColor,
                             fontWeight: FontWeight.w600,

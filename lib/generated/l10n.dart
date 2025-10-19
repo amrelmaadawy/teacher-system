@@ -158,6 +158,116 @@ class S {
       args: [],
     );
   }
+
+  /// `Join us and start managing your students`
+  String get Joinusandstartmanagingyourstudents {
+    return Intl.message(
+      'Join us and start managing your students',
+      name: 'Joinusandstartmanagingyourstudents',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register as`
+  String get Registeras {
+    return Intl.message('Register as', name: 'Registeras', desc: '', args: []);
+  }
+
+  /// `Full Name`
+  String get FullName {
+    return Intl.message('Full Name', name: 'FullName', desc: '', args: []);
+  }
+
+  /// `Enter Full Name`
+  String get EnterFullName {
+    return Intl.message(
+      'Enter Full Name',
+      name: 'EnterFullName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email Address`
+  String get EmailAddress {
+    return Intl.message(
+      'Email Address',
+      name: 'EmailAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Email Address`
+  String get EnterEmailAddress {
+    return Intl.message(
+      'Enter Email Address',
+      name: 'EnterEmailAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone Number`
+  String get PhoneNumber {
+    return Intl.message(
+      'Phone Number',
+      name: 'PhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Phone Number`
+  String get EnterPhoneNumber {
+    return Intl.message(
+      'Enter Phone Number',
+      name: 'EnterPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create a Password`
+  String get CreatePassword {
+    return Intl.message(
+      'Create a Password',
+      name: 'CreatePassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm Password`
+  String get ConfirmPassword {
+    return Intl.message(
+      'Confirm Password',
+      name: 'ConfirmPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm Your Password`
+  String get ConfirmYourPassword {
+    return Intl.message(
+      'Confirm Your Password',
+      name: 'ConfirmYourPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already Have An Account?`
+  String get AlreadyHaveAnAccount {
+    return Intl.message(
+      'Already Have An Account?',
+      name: 'AlreadyHaveAnAccount',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

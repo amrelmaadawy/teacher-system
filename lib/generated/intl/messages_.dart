@@ -22,20 +22,42 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "AlreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
+      "Already Have An Account?",
+    ),
+    "ConfirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
+    "ConfirmYourPassword": MessageLookupByLibrary.simpleMessage(
+      "Confirm Your Password",
+    ),
     "CreateAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+    "CreatePassword": MessageLookupByLibrary.simpleMessage("Create a Password"),
+    "EmailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
     "EmailorPhone": MessageLookupByLibrary.simpleMessage("Email or Phone"),
+    "EnterEmailAddress": MessageLookupByLibrary.simpleMessage(
+      "Enter Email Address",
+    ),
     "EnterEmailorPhone": MessageLookupByLibrary.simpleMessage(
       "Enter Your Email or Phone",
     ),
+    "EnterFullName": MessageLookupByLibrary.simpleMessage("Enter Full Name"),
     "EnterPassword": MessageLookupByLibrary.simpleMessage(
       "Enter Your Password",
     ),
+    "EnterPhoneNumber": MessageLookupByLibrary.simpleMessage(
+      "Enter Phone Number",
+    ),
     "ForgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+    "FullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+    "Joinusandstartmanagingyourstudents": MessageLookupByLibrary.simpleMessage(
+      "Join us and start managing your students",
+    ),
     "Loginas": MessageLookupByLibrary.simpleMessage("Login as"),
     "NewToTeacherSystem": MessageLookupByLibrary.simpleMessage(
       "New To Teacher System?",
     ),
     "Password": MessageLookupByLibrary.simpleMessage("Password"),
+    "PhoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
+    "Registeras": MessageLookupByLibrary.simpleMessage("Register as"),
     "SignIn": MessageLookupByLibrary.simpleMessage("Sign In"),
     "SignintocontinuemanagingyourStudents":
         MessageLookupByLibrary.simpleMessage(
