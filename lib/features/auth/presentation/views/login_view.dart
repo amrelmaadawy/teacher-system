@@ -22,7 +22,7 @@ class LoginView extends StatelessWidget {
                 GraduatedHatWidget(),
                 Text(
                   S.of(context).WelcomeBack,
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500,color: lightMainTextColor),
                 ),
                 Text(
                   S.of(context).SignintocontinuemanagingyourStudents,

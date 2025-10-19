@@ -34,7 +34,11 @@ class _LoginCardState extends State<LoginCard> {
           children: [
             Text(
               S.of(context).Loginas,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 16,
+                color: lightMainTextColor,
+              ),
             ),
             SizedBox(height: 10),
             Row(
