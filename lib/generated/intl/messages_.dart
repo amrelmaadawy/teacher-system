@@ -55,6 +55,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "NewToTeacherSystem": MessageLookupByLibrary.simpleMessage(
       "New To Teacher System?",
     ),
+    "NoWorriesEnterYourEmailorPhoneandwellSendYouaResetLink":
+        MessageLookupByLibrary.simpleMessage(
+          "No worries! Enter your email or phone and we will send you a reset link",
+        ),
     "Password": MessageLookupByLibrary.simpleMessage("Password"),
     "PhoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
     "Registeras": MessageLookupByLibrary.simpleMessage("Register as"),

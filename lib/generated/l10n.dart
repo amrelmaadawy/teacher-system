@@ -278,6 +278,16 @@ class S {
       args: [],
     );
   }
+
+  /// `No worries! Enter your email or phone and we will send you a reset link`
+  String get NoWorriesEnterYourEmailorPhoneandwellSendYouaResetLink {
+    return Intl.message(
+      'No worries! Enter your email or phone and we will send you a reset link',
+      name: 'NoWorriesEnterYourEmailorPhoneandwellSendYouaResetLink',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

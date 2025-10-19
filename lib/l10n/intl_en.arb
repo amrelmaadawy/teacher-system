@@ -51,6 +51,9 @@
     "@ConfirmYourPassword": {},
     "AlreadyHaveAnAccount":"Already Have An Account?",
     "@AlreadyHaveAnAccount": {},
-     "SendResetLink":"Send Reset Link",
-    "@SendResetLink": {}
+    "SendResetLink":"Send Reset Link",
+    "@SendResetLink": {},
+     "NoWorriesEnterYourEmailorPhoneandwellSendYouaResetLink":"No worries! Enter your email or phone and we will send you a reset link",
+    "@NoWorriesEnterYourEmailorPhoneandwellSendYouaResetLink": {}
+    
 }

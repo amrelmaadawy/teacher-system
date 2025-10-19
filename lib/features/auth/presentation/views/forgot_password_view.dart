@@ -24,7 +24,7 @@ class ForgotPasswordView extends StatelessWidget {
                 SizedBox(height: 30),
 
                 Text(
-                  'Forgot Password?',
+                  S.of(context).ForgotPassword,
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w500,
@@ -34,7 +34,7 @@ class ForgotPasswordView extends StatelessWidget {
                 SizedBox(height: 10),
 
                 Text(
-                  'No worries! Enter your email or phone and we\'ll send you a reset link',
+                  S.of(context).NoWorriesEnterYourEmailorPhoneandwellSendYouaResetLink,
                   style: TextStyle(fontSize: 16, color: lightSubTextColor),
                 ),
                 SizedBox(height: 40),
