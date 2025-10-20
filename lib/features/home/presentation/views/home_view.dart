@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/core/utils/app_size.dart';
 import 'package:teacher_system/features/home/presentation/widgets/custom_dashboard_card.dart';
+import 'package:teacher_system/features/home/presentation/widgets/custom_quick_action_card.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -51,7 +52,7 @@ class HomeView extends StatelessWidget {
               CustomDashBoardCard(
                 icon: Icons.trending_up_outlined,
                 title: 'Attendance Rate',
-                count: 30,
+                count: 60,
                 iconColor: Color(0xffa023fa),
                 circleColor: Color(0xfffaf5ff),
               ),
@@ -61,6 +62,30 @@ class HomeView extends StatelessWidget {
                 count: 420,
                 iconColor: Color(0xfff54900),
                 circleColor: Color(0xfffff7ed),
+              ),
+            ],
+          ),
+          SizedBox(height: 10),
+          Text(
+            'Quick Actions',
+            style: TextStyle(color: lightMainTextColor, fontSize: 16),
+          ),
+          SizedBox(height: 10),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              CustomQuickActionCard(
+                icon: Icons.person_add_alt_1_outlined,
+                title: 'Add Student',
+              ),
+              CustomQuickActionCard(
+                icon: Icons.calendar_today_outlined,
+                title: 'Mark Attendance',
+              ),
+              CustomQuickActionCard(
+                icon: Icons.wallet_outlined,
+                title: 'Add Payment',
               ),
             ],
           ),
