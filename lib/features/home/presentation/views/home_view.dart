@@ -1,7 +1,71 @@
 import 'package:flutter/material.dart';
+import 'package:teacher_system/core/utils/app_colors.dart';
+import 'package:teacher_system/core/utils/app_size.dart';
+import 'package:teacher_system/features/home/presentation/widgets/custom_dashboard_card.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
   @override
-  Widget build(BuildContext context) => const Center(child: Text('🏠 Home'));
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(defPadding),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Welcom Back!',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w500,
+              color: lightMainTextColor,
+            ),
+          ),
+          Text(
+            'Here\'s what\'s happening with your students today',
+            style: TextStyle(fontSize: 15, color: lightSubTextColor),
+          ),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              CustomDashBoardCard(
+                icon: Icons.group_outlined,
+                title: 'Total Students',
+                count: 30,
+                iconColor: Color(0xff2366fc),
+                circleColor: Color(0xffeff6ff),
+              ),
+              CustomDashBoardCard(
+                icon: Icons.attach_money_outlined,
+                title: 'Monthly Income',
+                count: 2510,
+                iconColor: Color(0xff00a63e),
+                circleColor: Color(0xfff0fdf4),
+              ),
+            ],
+          ),
+          SizedBox(height: 15),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              CustomDashBoardCard(
+                icon: Icons.trending_up_outlined,
+                title: 'Attendance Rate',
+                count: 30,
+                iconColor: Color(0xffa023fa),
+                circleColor: Color(0xfffaf5ff),
+              ),
+              CustomDashBoardCard(
+                icon: Icons.wallet_outlined,
+                title: 'Pending Payments',
+                count: 420,
+                iconColor: Color(0xfff54900),
+                circleColor: Color(0xfffff7ed),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
 }

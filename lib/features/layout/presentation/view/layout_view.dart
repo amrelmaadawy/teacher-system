@@ -1,5 +1,6 @@
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/features/attendance/presentation/views/attendance_view.dart';
 import 'package:teacher_system/features/home/presentation/views/home_view.dart';
 import 'package:teacher_system/features/payments/presentation/views/payments_view.dart';
@@ -48,32 +49,26 @@ class _HomeScreenState extends State<LayoutView> {
         items: [
           SalomonBottomBarItem(
             icon: const Icon(Icons.dashboard_outlined),
-            title:  Text(S.of(context).DashBoard),
-            selectedColor: Colors.blue,
+            title: Text(S.of(context).DashBoard),
+            selectedColor: lightBottonColor,
           ),
           SalomonBottomBarItem(
             icon: const Icon(Icons.people_outline),
-            title:  Text(S.of(context).Students),
-            selectedColor: Colors.purple,
+            title: Text(S.of(context).Students),
+            selectedColor: lightBottonColor,
           ),
           SalomonBottomBarItem(
             icon: const Icon(Icons.check_circle_outline),
-            title:  Text(S.of(context).Attendance),
-            selectedColor: Colors.green,
+            title: Text(S.of(context).Attendance),
+            selectedColor:lightBottonColor,
           ),
           SalomonBottomBarItem(
             icon: const Icon(Icons.payments_outlined),
-            title:  Text(S.of(context).Payments),
-            selectedColor: Colors.orange,
+            title: Text(S.of(context).Payments),
+            selectedColor:lightBottonColor,
           ),
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
