@@ -22,10 +22,14 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "AddPayment": MessageLookupByLibrary.simpleMessage("Add Payment"),
+    "AddStudent": MessageLookupByLibrary.simpleMessage("Add Student"),
     "AlreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Already Have An Account?",
     ),
     "Attendance": MessageLookupByLibrary.simpleMessage("Attendance"),
+    "AttendanceRate": MessageLookupByLibrary.simpleMessage("Attendance Rate"),
+    "Collected": MessageLookupByLibrary.simpleMessage("Collected"),
     "ConfirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "ConfirmYourPassword": MessageLookupByLibrary.simpleMessage(
       "Confirm Your Password",
@@ -50,10 +54,17 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "ForgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "FullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+    "HeresWhatIsHappeningWithYourStudentsToday":
+        MessageLookupByLibrary.simpleMessage(
+          "Here is what is happening with your students today",
+        ),
     "Joinusandstartmanagingyourstudents": MessageLookupByLibrary.simpleMessage(
       "Join us and start managing your students",
     ),
+    "Lessons": MessageLookupByLibrary.simpleMessage("Lessons"),
     "Loginas": MessageLookupByLibrary.simpleMessage("Login as"),
+    "MarkAttendance": MessageLookupByLibrary.simpleMessage("Mark Attendance"),
+    "MonthlyIncome": MessageLookupByLibrary.simpleMessage("Monthly Income"),
     "NewToTeacherSystem": MessageLookupByLibrary.simpleMessage(
       "New To Teacher System?",
     ),
@@ -63,7 +74,10 @@ class MessageLookup extends MessageLookupByLibrary {
         ),
     "Password": MessageLookupByLibrary.simpleMessage("Password"),
     "Payments": MessageLookupByLibrary.simpleMessage("Payments"),
+    "PendingPayments": MessageLookupByLibrary.simpleMessage("Pending Payments"),
     "PhoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
+    "Present": MessageLookupByLibrary.simpleMessage("Present"),
+    "QuickActions": MessageLookupByLibrary.simpleMessage("Quick Actions"),
     "Registeras": MessageLookupByLibrary.simpleMessage("Register as"),
     "SendResetLink": MessageLookupByLibrary.simpleMessage("Send Reset Link"),
     "SignIn": MessageLookupByLibrary.simpleMessage("Sign In"),
@@ -72,6 +86,8 @@ class MessageLookup extends MessageLookupByLibrary {
           "Sign in to continue managing your Students",
         ),
     "Students": MessageLookupByLibrary.simpleMessage("Students"),
+    "TodaysSummary": MessageLookupByLibrary.simpleMessage("Todays Summary"),
+    "TotalStudents": MessageLookupByLibrary.simpleMessage("Total Students"),
     "WelcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
     "assistant": MessageLookupByLibrary.simpleMessage("assistant"),
     "teacher": MessageLookupByLibrary.simpleMessage("teacher"),

@@ -308,6 +308,111 @@ class S {
   String get Payments {
     return Intl.message('Payments', name: 'Payments', desc: '', args: []);
   }
+
+  /// `Here is what is happening with your students today`
+  String get HeresWhatIsHappeningWithYourStudentsToday {
+    return Intl.message(
+      'Here is what is happening with your students today',
+      name: 'HeresWhatIsHappeningWithYourStudentsToday',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total Students`
+  String get TotalStudents {
+    return Intl.message(
+      'Total Students',
+      name: 'TotalStudents',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Monthly Income`
+  String get MonthlyIncome {
+    return Intl.message(
+      'Monthly Income',
+      name: 'MonthlyIncome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Attendance Rate`
+  String get AttendanceRate {
+    return Intl.message(
+      'Attendance Rate',
+      name: 'AttendanceRate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pending Payments`
+  String get PendingPayments {
+    return Intl.message(
+      'Pending Payments',
+      name: 'PendingPayments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quick Actions`
+  String get QuickActions {
+    return Intl.message(
+      'Quick Actions',
+      name: 'QuickActions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Student`
+  String get AddStudent {
+    return Intl.message('Add Student', name: 'AddStudent', desc: '', args: []);
+  }
+
+  /// `Mark Attendance`
+  String get MarkAttendance {
+    return Intl.message(
+      'Mark Attendance',
+      name: 'MarkAttendance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Payment`
+  String get AddPayment {
+    return Intl.message('Add Payment', name: 'AddPayment', desc: '', args: []);
+  }
+
+  /// `Todays Summary`
+  String get TodaysSummary {
+    return Intl.message(
+      'Todays Summary',
+      name: 'TodaysSummary',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lessons`
+  String get Lessons {
+    return Intl.message('Lessons', name: 'Lessons', desc: '', args: []);
+  }
+
+  /// `Present`
+  String get Present {
+    return Intl.message('Present', name: 'Present', desc: '', args: []);
+  }
+
+  /// `Collected`
+  String get Collected {
+    return Intl.message('Collected', name: 'Collected', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

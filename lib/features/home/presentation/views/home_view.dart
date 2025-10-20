@@ -4,6 +4,7 @@ import 'package:teacher_system/core/utils/app_size.dart';
 import 'package:teacher_system/features/home/presentation/widgets/custom_dashboard_card.dart';
 import 'package:teacher_system/features/home/presentation/widgets/custom_quick_action_card.dart';
 import 'package:teacher_system/features/home/presentation/widgets/custom_today_summary_widget.dart';
+import 'package:teacher_system/generated/l10n.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -16,7 +17,7 @@ class HomeView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Welcom Back!',
+              S.of(context).WelcomeBack,
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w500,
@@ -24,7 +25,7 @@ class HomeView extends StatelessWidget {
               ),
             ),
             Text(
-              'Here\'s what\'s happening with your students today',
+              S.of(context).HeresWhatIsHappeningWithYourStudentsToday,
               style: TextStyle(fontSize: 15, color: lightSubTextColor),
             ),
 
@@ -33,14 +34,14 @@ class HomeView extends StatelessWidget {
               children: [
                 CustomDashBoardCard(
                   icon: Icons.group_outlined,
-                  title: 'Total Students',
+                  title: S.of(context).TotalStudents,
                   count: 30,
                   iconColor: Color(0xff2366fc),
                   circleColor: Color(0xffeff6ff),
                 ),
                 CustomDashBoardCard(
                   icon: Icons.attach_money_outlined,
-                  title: 'Monthly Income',
+                  title: S.of(context).MonthlyIncome,
                   count: 2510,
                   iconColor: Color(0xff00a63e),
                   circleColor: Color(0xfff0fdf4),
@@ -53,14 +54,14 @@ class HomeView extends StatelessWidget {
               children: [
                 CustomDashBoardCard(
                   icon: Icons.trending_up_outlined,
-                  title: 'Attendance Rate',
+                  title: S.of(context).AttendanceRate,
                   count: 60,
                   iconColor: Color(0xffa023fa),
                   circleColor: Color(0xfffaf5ff),
                 ),
                 CustomDashBoardCard(
                   icon: Icons.wallet_outlined,
-                  title: 'Pending Payments',
+                  title: S.of(context).PendingPayments,
                   count: 420,
                   iconColor: Color(0xfff54900),
                   circleColor: Color(0xfffff7ed),
@@ -69,7 +70,7 @@ class HomeView extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Text(
-              'Quick Actions',
+              S.of(context).QuickActions,
               style: TextStyle(color: lightMainTextColor, fontSize: 16),
             ),
             SizedBox(height: 10),
@@ -79,15 +80,15 @@ class HomeView extends StatelessWidget {
               children: [
                 CustomQuickActionCard(
                   icon: Icons.person_add_alt_1_outlined,
-                  title: 'Add Student',
+                  title: S.of(context).AddStudent,
                 ),
                 CustomQuickActionCard(
                   icon: Icons.calendar_today_outlined,
-                  title: 'Mark Attendance',
+                  title: S.of(context).MarkAttendance,
                 ),
                 CustomQuickActionCard(
                   icon: Icons.wallet_outlined,
-                  title: 'Add Payment',
+                  title: S.of(context).AddPayment,
                 ),
               ],
             ),
@@ -104,7 +105,7 @@ class HomeView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Today\'s Summary',
+                      S.of(context).TodaysSummary,
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w600,
@@ -115,10 +116,16 @@ class HomeView extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        CustomTodaysSummaryWidget(title: 'Lessons', number: 8),
-                        CustomTodaysSummaryWidget(title: 'Present', number: 6),
                         CustomTodaysSummaryWidget(
-                          title: 'Collected',
+                          title: S.of(context).Lessons,
+                          number: 8,
+                        ),
+                        CustomTodaysSummaryWidget(
+                          title: S.of(context).Present,
+                          number: 6,
+                        ),
+                        CustomTodaysSummaryWidget(
+                          title: S.of(context).Collected,
                           number: 250,
                         ),
                       ],

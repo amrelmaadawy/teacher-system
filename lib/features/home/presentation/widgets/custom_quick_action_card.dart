@@ -3,7 +3,11 @@ import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/core/utils/app_size.dart';
 
 class CustomQuickActionCard extends StatelessWidget {
-  const CustomQuickActionCard({super.key, required this.icon, required this.title});
+  const CustomQuickActionCard({
+    super.key,
+    required this.icon,
+    required this.title,
+  });
   final IconData icon;
   final String title;
   @override
@@ -25,9 +29,7 @@ class CustomQuickActionCard extends StatelessWidget {
               CircleAvatar(
                 backgroundColor: Color(0xffeef5fa),
                 radius: 25,
-                child: Icon(
-icon,                  color: Color(0xff5ba4cf),
-                ),
+                child: Icon(icon, color: Color(0xff5ba4cf)),
               ),
               Text(title, style: TextStyle(color: lightMainTextColor)),
             ],

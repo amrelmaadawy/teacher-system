@@ -33,6 +33,9 @@ class _HomeScreenState extends State<LayoutView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        surfaceTintColor: Colors.transparent,
+        elevation: 0,
         title: IndexedStack(index: _currentIndex, children: titles),
         actions: [
           IconButton(
@@ -44,6 +47,7 @@ class _HomeScreenState extends State<LayoutView> {
       ),
       body: IndexedStack(index: _currentIndex, children: _screens),
       bottomNavigationBar: SalomonBottomBar(
+        backgroundColor: Colors.white,
         currentIndex: _currentIndex,
         onTap: (i) => setState(() => _currentIndex = i),
         items: [
@@ -60,12 +64,12 @@ class _HomeScreenState extends State<LayoutView> {
           SalomonBottomBarItem(
             icon: const Icon(Icons.check_circle_outline),
             title: Text(S.of(context).Attendance),
-            selectedColor:lightBottonColor,
+            selectedColor: lightBottonColor,
           ),
           SalomonBottomBarItem(
             icon: const Icon(Icons.payments_outlined),
             title: Text(S.of(context).Payments),
-            selectedColor:lightBottonColor,
+            selectedColor: lightBottonColor,
           ),
         ],
       ),
