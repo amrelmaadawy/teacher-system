@@ -5,6 +5,7 @@ import 'package:teacher_system/core/utils/app_size.dart';
 import 'package:teacher_system/features/attendance/presentation/views/attendance_view.dart';
 import 'package:teacher_system/features/home/presentation/views/home_view.dart';
 import 'package:teacher_system/features/payments/presentation/views/payments_view.dart';
+import 'package:teacher_system/features/students/presentation/views/add_student_view.dart';
 import 'package:teacher_system/features/students/presentation/views/students_view.dart';
 import 'package:teacher_system/generated/l10n.dart';
 
@@ -33,14 +34,19 @@ class _HomeScreenState extends State<LayoutView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       floatingActionButton: FloatingActionButton.extended(
-        
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadiusGeometry.circular(defBorderRadius),
         ),
         backgroundColor: lightBottonColor,
         isExtended: true,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => AddStudentView()),
+          );
+        },
         label: Text(
           'Add Student',
           style: TextStyle(color: lightWhiteColor, fontWeight: FontWeight.w600),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/core/utils/app_size.dart';
-import 'package:teacher_system/features/auth/presentation/widgets/custom_elevated_button.dart';
+import 'package:teacher_system/core/components/custom_elevated_button.dart';
 import 'package:teacher_system/features/auth/presentation/widgets/custom_login_person.dart';
-import 'package:teacher_system/features/auth/presentation/widgets/custom_text_form_field.dart';
+import 'package:teacher_system/core/components/custom_text_form_field.dart';
 import 'package:teacher_system/generated/l10n.dart';
 
 class CreateAccountCard extends StatefulWidget {

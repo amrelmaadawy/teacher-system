@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/core/utils/app_size.dart';
-import 'package:teacher_system/features/auth/presentation/widgets/custom_text_form_field.dart';
+import 'package:teacher_system/core/components/custom_text_form_field.dart';
 import 'package:teacher_system/features/students/presentation/widgets/custom_student_item.dart';
 import 'package:teacher_system/features/students/presentation/widgets/custom_students_card.dart';
 
@@ -35,7 +35,7 @@ class _StudentsViewState extends State<StudentsView> {
                 CustomTextFormField(
                   prefixIcon: Icon(Icons.search, color: lightSubTextColor),
                   suffixIcon: Icon(Icons.tune, color: lightSubTextColor),
-                  controller: TextEditingController(),
+                  controller: searchController,
                   text: '',
                   labelText: 'Search Students',
                   validator: (i) => null,
