@@ -1,6 +1,7 @@
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
+import 'package:teacher_system/core/utils/app_size.dart';
 import 'package:teacher_system/features/attendance/presentation/views/attendance_view.dart';
 import 'package:teacher_system/features/home/presentation/views/home_view.dart';
 import 'package:teacher_system/features/payments/presentation/views/payments_view.dart';
@@ -32,6 +33,19 @@ class _HomeScreenState extends State<LayoutView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton.extended(
+        
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadiusGeometry.circular(defBorderRadius),
+        ),
+        backgroundColor: lightBottonColor,
+        isExtended: true,
+        onPressed: () {},
+        label: Text(
+          'Add Student',
+          style: TextStyle(color: lightWhiteColor, fontWeight: FontWeight.w600),
+        ),
+      ),
       appBar: AppBar(
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         surfaceTintColor: Colors.transparent,
