@@ -51,7 +51,8 @@ class CustomTextFormField extends StatelessWidget {
               color: lightSubTextColor,
               fontWeight: FontWeight.w500,
             ),
-            filled: false,
+            filled: true,
+            fillColor:lightWhiteColor,
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 16,
               vertical: 14,

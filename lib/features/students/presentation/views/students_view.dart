@@ -1,8 +1,76 @@
 import 'package:flutter/material.dart';
+import 'package:teacher_system/core/utils/app_colors.dart';
+import 'package:teacher_system/core/utils/app_size.dart';
+import 'package:teacher_system/features/auth/presentation/widgets/custom_text_form_field.dart';
+import 'package:teacher_system/features/students/presentation/widgets/custom_students_card.dart';
 
-class StudentsView extends StatelessWidget {
+class StudentsView extends StatefulWidget {
   const StudentsView({super.key});
+
   @override
-  Widget build(BuildContext context) =>
-      const Center(child: Text('👩‍🎓 Students'));
+  State<StudentsView> createState() => _StudentsViewState();
+}
+
+class _StudentsViewState extends State<StudentsView> {
+  final searchController = TextEditingController();
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(defPadding),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Manage and track your students',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w500,
+              color: lightMainTextColor,
+            ),
+          ),
+          CustomTextFormField(
+            prefixIcon: Icon(Icons.search, color: lightSubTextColor),
+            suffixIcon: Icon(Icons.tune, color: lightSubTextColor),
+            controller: searchController,
+            text: '',
+            labelText: 'Search Students',
+            validator: (i) {
+              return null;
+            },
+            keyboardType: TextInputType.text,
+          ),
+          SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              CustomStudentsCard(
+                text: 'Total',
+                number: 10,
+                backGroundColor: lightWhiteColor,
+                textColor: lightSubTextColor,
+                numberColor: lightMainTextColor,
+                borderColor: lightBordersColor,
+              ),
+              CustomStudentsCard(
+                text: 'Active',
+                number: 8,
+                backGroundColor: Color(0xfff0fdf4),
+                textColor: Color(0xff00a649),
+                numberColor: Color(0xff178a45),
+                borderColor: Color(0xffb9f8cf),
+              ),
+              CustomStudentsCard(
+                text: 'Absent',
+                number: 2,
+                backGroundColor: Color(0xfffef2f2),
+                textColor: Color(0xffe70413),
+                numberColor: Color(0xffc10007),
+                borderColor: Color(0xffffc9c9),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
 }
