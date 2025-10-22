@@ -3,6 +3,7 @@ import 'package:teacher_system/core/components/custom_elevated_button.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/core/utils/app_size.dart';
 import 'package:teacher_system/core/components/custom_text_form_field.dart';
+import 'package:teacher_system/generated/l10n.dart';
 
 class AddStudentView extends StatefulWidget {
   const AddStudentView({super.key});
@@ -19,7 +20,7 @@ class _AddStudentViewState extends State<AddStudentView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Add Student')),
+      appBar: AppBar(title: Text(S.of(context).AddStudent)),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(defPadding),
@@ -33,7 +34,7 @@ class _AddStudentViewState extends State<AddStudentView> {
                 child: Padding(
                   padding: const EdgeInsets.all(defPadding),
                   child: Text(
-                    'Fill in the required information below to add a new student to your class.',
+                    S.of(context).FillInTheRequiredInformationBelowToAddANewStudentToYourClass,
                     style: TextStyle(
                       color: lightSubTextColor,
                       fontSize: 16,
@@ -45,8 +46,8 @@ class _AddStudentViewState extends State<AddStudentView> {
               SizedBox(height: 10),
               CustomTextFormField(
                 controller: studentNameController,
-                text: 'Student Name *',
-                labelText: 'Enter Student Full Name',
+                text: S.of(context).StudentName,
+                labelText: S.of(context).EnterStudentFullName,
                 validator: (i) {
                   return null;
                 },
@@ -55,8 +56,8 @@ class _AddStudentViewState extends State<AddStudentView> {
               SizedBox(height: 10),
               CustomTextFormField(
                 controller: studentPhoneNumberController,
-                text: 'Phone Number *',
-                labelText: 'Enter Student Phone Number',
+                text: S.of(context).StudentPhoneNumber,
+                labelText: S.of(context).EnterStudentPhoneNumber,
                 validator: (i) {
                   return null;
                 },
@@ -65,8 +66,8 @@ class _AddStudentViewState extends State<AddStudentView> {
               SizedBox(height: 10),
               CustomTextFormField(
                 controller: paredntContactController,
-                text: 'Parent Contact(optional)',
-                labelText: 'Enter Parent Phone Number',
+                text: S.of(context).ParentPhoneNumber,
+                labelText: S.of(context).EnterParentPhoneNumber,
                 validator: (i) {
                   return null;
                 },
@@ -75,21 +76,21 @@ class _AddStudentViewState extends State<AddStudentView> {
               SizedBox(height: 10),
               CustomTextFormField(
                 controller: gradeController,
-                text: 'Grade *',
-                labelText: 'Select Grade',
+                text:S.of(context).Grade,
+                labelText: S.of(context).SelectGrade,
                 validator: (i) {
                   return null;
                 },
                 keyboardType: TextInputType.text,
               ),
               Spacer(),
-              CustomElevatedButton(onPressed: () {}, text: 'Add Student'),
+              CustomElevatedButton(onPressed: () {}, text: S.of(context).AddStudent),
               SizedBox(height: 15),
               CustomElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                text: 'Cancel',
+                text: S.of(context).Cancel,
                 color: Color(0xffc10007),
               ),
             ],

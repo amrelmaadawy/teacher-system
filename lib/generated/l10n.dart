@@ -413,6 +413,131 @@ class S {
   String get Collected {
     return Intl.message('Collected', name: 'Collected', desc: '', args: []);
   }
+
+  /// `Manage and track your students`
+  String get ManageAndTrackYourStudents {
+    return Intl.message(
+      'Manage and track your students',
+      name: 'ManageAndTrackYourStudents',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search Students`
+  String get SearchStudents {
+    return Intl.message(
+      'Search Students',
+      name: 'SearchStudents',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total`
+  String get Total {
+    return Intl.message('Total', name: 'Total', desc: '', args: []);
+  }
+
+  /// `Active`
+  String get Active {
+    return Intl.message('Active', name: 'Active', desc: '', args: []);
+  }
+
+  /// `Absent`
+  String get Absent {
+    return Intl.message('Absent', name: 'Absent', desc: '', args: []);
+  }
+
+  /// `Fill in the required information below to add a new student to your class`
+  String get FillInTheRequiredInformationBelowToAddANewStudentToYourClass {
+    return Intl.message(
+      'Fill in the required information below to add a new student to your class',
+      name: 'FillInTheRequiredInformationBelowToAddANewStudentToYourClass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Student Name *`
+  String get StudentName {
+    return Intl.message(
+      'Student Name *',
+      name: 'StudentName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Student Full Name`
+  String get EnterStudentFullName {
+    return Intl.message(
+      'Enter Student Full Name',
+      name: 'EnterStudentFullName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PhoneNumber *`
+  String get StudentPhoneNumber {
+    return Intl.message(
+      'PhoneNumber *',
+      name: 'StudentPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Student Phone Number`
+  String get EnterStudentPhoneNumber {
+    return Intl.message(
+      'Enter Student Phone Number',
+      name: 'EnterStudentPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Parent Phone Number (optional)`
+  String get ParentPhoneNumber {
+    return Intl.message(
+      'Parent Phone Number (optional)',
+      name: 'ParentPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Parent Phone Number`
+  String get EnterParentPhoneNumber {
+    return Intl.message(
+      'Enter Parent Phone Number',
+      name: 'EnterParentPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Grade *`
+  String get Grade {
+    return Intl.message('Grade *', name: 'Grade', desc: '', args: []);
+  }
+
+  /// `Select Grade`
+  String get SelectGrade {
+    return Intl.message(
+      'Select Grade',
+      name: 'SelectGrade',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get Cancel {
+    return Intl.message('Cancel', name: 'Cancel', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "Absent": MessageLookupByLibrary.simpleMessage("Absent"),
+    "Active": MessageLookupByLibrary.simpleMessage("Active"),
     "AddPayment": MessageLookupByLibrary.simpleMessage("Add Payment"),
     "AddStudent": MessageLookupByLibrary.simpleMessage("Add Student"),
     "AlreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
@@ -29,6 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "Attendance": MessageLookupByLibrary.simpleMessage("Attendance"),
     "AttendanceRate": MessageLookupByLibrary.simpleMessage("Attendance Rate"),
+    "Cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
     "Collected": MessageLookupByLibrary.simpleMessage("Collected"),
     "ConfirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
     "ConfirmYourPassword": MessageLookupByLibrary.simpleMessage(
@@ -46,14 +49,28 @@ class MessageLookup extends MessageLookupByLibrary {
       "Enter Your Email or Phone",
     ),
     "EnterFullName": MessageLookupByLibrary.simpleMessage("Enter Full Name"),
+    "EnterParentPhoneNumber": MessageLookupByLibrary.simpleMessage(
+      "Enter Parent Phone Number",
+    ),
     "EnterPassword": MessageLookupByLibrary.simpleMessage(
       "Enter Your Password",
     ),
     "EnterPhoneNumber": MessageLookupByLibrary.simpleMessage(
       "Enter Phone Number",
     ),
+    "EnterStudentFullName": MessageLookupByLibrary.simpleMessage(
+      "Enter Student Full Name",
+    ),
+    "EnterStudentPhoneNumber": MessageLookupByLibrary.simpleMessage(
+      "Enter Student Phone Number",
+    ),
+    "FillInTheRequiredInformationBelowToAddANewStudentToYourClass":
+        MessageLookupByLibrary.simpleMessage(
+          "Fill in the required information below to add a new student to your class",
+        ),
     "ForgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "FullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+    "Grade": MessageLookupByLibrary.simpleMessage("Grade *"),
     "HeresWhatIsHappeningWithYourStudentsToday":
         MessageLookupByLibrary.simpleMessage(
           "Here is what is happening with your students today",
@@ -63,6 +80,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "Lessons": MessageLookupByLibrary.simpleMessage("Lessons"),
     "Loginas": MessageLookupByLibrary.simpleMessage("Login as"),
+    "ManageAndTrackYourStudents": MessageLookupByLibrary.simpleMessage(
+      "Manage and track your students",
+    ),
     "MarkAttendance": MessageLookupByLibrary.simpleMessage("Mark Attendance"),
     "MonthlyIncome": MessageLookupByLibrary.simpleMessage("Monthly Income"),
     "NewToTeacherSystem": MessageLookupByLibrary.simpleMessage(
@@ -72,6 +92,9 @@ class MessageLookup extends MessageLookupByLibrary {
         MessageLookupByLibrary.simpleMessage(
           "No worries! Enter your email or phone and we will send you a reset link",
         ),
+    "ParentPhoneNumber": MessageLookupByLibrary.simpleMessage(
+      "Parent Phone Number (optional)",
+    ),
     "Password": MessageLookupByLibrary.simpleMessage("Password"),
     "Payments": MessageLookupByLibrary.simpleMessage("Payments"),
     "PendingPayments": MessageLookupByLibrary.simpleMessage("Pending Payments"),
@@ -79,14 +102,19 @@ class MessageLookup extends MessageLookupByLibrary {
     "Present": MessageLookupByLibrary.simpleMessage("Present"),
     "QuickActions": MessageLookupByLibrary.simpleMessage("Quick Actions"),
     "Registeras": MessageLookupByLibrary.simpleMessage("Register as"),
+    "SearchStudents": MessageLookupByLibrary.simpleMessage("Search Students"),
+    "SelectGrade": MessageLookupByLibrary.simpleMessage("Select Grade"),
     "SendResetLink": MessageLookupByLibrary.simpleMessage("Send Reset Link"),
     "SignIn": MessageLookupByLibrary.simpleMessage("Sign In"),
     "SignintocontinuemanagingyourStudents":
         MessageLookupByLibrary.simpleMessage(
           "Sign in to continue managing your Students",
         ),
+    "StudentName": MessageLookupByLibrary.simpleMessage("Student Name *"),
+    "StudentPhoneNumber": MessageLookupByLibrary.simpleMessage("PhoneNumber *"),
     "Students": MessageLookupByLibrary.simpleMessage("Students"),
     "TodaysSummary": MessageLookupByLibrary.simpleMessage("Todays Summary"),
+    "Total": MessageLookupByLibrary.simpleMessage("Total"),
     "TotalStudents": MessageLookupByLibrary.simpleMessage("Total Students"),
     "WelcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
     "assistant": MessageLookupByLibrary.simpleMessage("assistant"),

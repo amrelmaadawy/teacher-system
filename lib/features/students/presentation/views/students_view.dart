@@ -4,6 +4,7 @@ import 'package:teacher_system/core/utils/app_size.dart';
 import 'package:teacher_system/core/components/custom_text_form_field.dart';
 import 'package:teacher_system/features/students/presentation/widgets/custom_student_item.dart';
 import 'package:teacher_system/features/students/presentation/widgets/custom_students_card.dart';
+import 'package:teacher_system/generated/l10n.dart';
 
 class StudentsView extends StatefulWidget {
   const StudentsView({super.key});
@@ -25,7 +26,7 @@ class _StudentsViewState extends State<StudentsView> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Manage and track your students',
+                  S.of(context).ManageAndTrackYourStudents,
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w500,
@@ -37,7 +38,7 @@ class _StudentsViewState extends State<StudentsView> {
                   suffixIcon: Icon(Icons.tune, color: lightSubTextColor),
                   controller: searchController,
                   text: '',
-                  labelText: 'Search Students',
+                  labelText: S.of(context).SearchStudents,
                   validator: (i) => null,
                   keyboardType: TextInputType.text,
                 ),
@@ -46,7 +47,7 @@ class _StudentsViewState extends State<StudentsView> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     CustomStudentsCard(
-                      text: 'Total',
+                      text: S.of(context).Total,
                       number: 10,
                       backGroundColor: lightWhiteColor,
                       textColor: lightSubTextColor,
@@ -54,7 +55,7 @@ class _StudentsViewState extends State<StudentsView> {
                       borderColor: lightBordersColor,
                     ),
                     CustomStudentsCard(
-                      text: 'Active',
+                      text: S.of(context).Active,
                       number: 8,
                       backGroundColor: Color(0xfff0fdf4),
                       textColor: Color(0xff00a649),
@@ -62,7 +63,7 @@ class _StudentsViewState extends State<StudentsView> {
                       borderColor: Color(0xffb9f8cf),
                     ),
                     CustomStudentsCard(
-                      text: 'Absent',
+                      text: S.of(context).Absent,
                       number: 2,
                       backGroundColor: Color(0xfffef2f2),
                       textColor: Color(0xffe70413),
