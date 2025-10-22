@@ -43,8 +43,8 @@ class HomeView extends StatelessWidget {
                   icon: Icons.attach_money_outlined,
                   title: S.of(context).MonthlyIncome,
                   count: 2510,
-                  iconColor: Color(0xff00a63e),
-                  circleColor: Color(0xfff0fdf4),
+                  iconColor: lightGreenTextColor,
+                  circleColor: lightGreenBackgroundColor,
                 ),
               ],
             ),
@@ -97,7 +97,7 @@ class HomeView extends StatelessWidget {
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(defBorderRadius),
-                color: Color(0xff55a3e8),
+                color: lightBottonColor,
               ),
               child: Padding(
                 padding: const EdgeInsets.all(defPadding),

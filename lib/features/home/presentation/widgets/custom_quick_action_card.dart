@@ -27,9 +27,9 @@ class CustomQuickActionCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CircleAvatar(
-                backgroundColor: Color(0xffeef5fa),
+                backgroundColor: lightBlueBackgroundColor,
                 radius: 25,
-                child: Icon(icon, color: Color(0xff5ba4cf)),
+                child: Icon(icon, color: lightBottonColor),
               ),
               Text(title, style: TextStyle(color: lightMainTextColor)),
             ],

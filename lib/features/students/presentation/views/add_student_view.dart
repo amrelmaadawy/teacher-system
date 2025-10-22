@@ -34,7 +34,9 @@ class _AddStudentViewState extends State<AddStudentView> {
                 child: Padding(
                   padding: const EdgeInsets.all(defPadding),
                   child: Text(
-                    S.of(context).FillInTheRequiredInformationBelowToAddANewStudentToYourClass,
+                    S
+                        .of(context)
+                        .FillInTheRequiredInformationBelowToAddANewStudentToYourClass,
                     style: TextStyle(
                       color: lightSubTextColor,
                       fontSize: 16,
@@ -76,7 +78,7 @@ class _AddStudentViewState extends State<AddStudentView> {
               SizedBox(height: 10),
               CustomTextFormField(
                 controller: gradeController,
-                text:S.of(context).Grade,
+                text: S.of(context).Grade,
                 labelText: S.of(context).SelectGrade,
                 validator: (i) {
                   return null;
@@ -84,14 +86,17 @@ class _AddStudentViewState extends State<AddStudentView> {
                 keyboardType: TextInputType.text,
               ),
               Spacer(),
-              CustomElevatedButton(onPressed: () {}, text: S.of(context).AddStudent),
+              CustomElevatedButton(
+                onPressed: () {},
+                text: S.of(context).AddStudent,
+              ),
               SizedBox(height: 15),
               CustomElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
                 text: S.of(context).Cancel,
-                color: Color(0xffc10007),
+                color: lightRedTextColor,
               ),
             ],
           ),

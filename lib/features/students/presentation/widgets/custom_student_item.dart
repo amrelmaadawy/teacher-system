@@ -1,12 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/core/utils/app_size.dart';
 
 class CustomStudentItem extends StatelessWidget {
-  const CustomStudentItem({
-    super.key,
-  });
+  const CustomStudentItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +21,7 @@ class CustomStudentItem extends StatelessWidget {
               radius: 30,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(30),
-                child: Image.asset(
-                  'assets/images/na3dawy.jpg',
-                ),
+                child: Image.asset('assets/images/na3dawy.jpg'),
               ),
             ),
             SizedBox(width: 10),
@@ -54,28 +49,28 @@ class CustomStudentItem extends StatelessWidget {
             Spacer(),
             Container(
               decoration: BoxDecoration(
-                color: Color(0xffdbfce7),
+                color: lightGreenBackgroundColor,
                 borderRadius: BorderRadius.circular(defBorderRadius),
               ),
               child: Padding(
                 padding: const EdgeInsets.all(defPadding / 2),
                 child: Text(
                   'Active',
-                  style: TextStyle(color: Color(0xff008236)),
+                  style: TextStyle(color: lightGreenTextColor),
                 ),
               ),
             ),
             SizedBox(width: 5),
             Container(
               decoration: BoxDecoration(
-                color: Color(0xffdbfce7),
+                color: lightGreenBackgroundColor,
                 borderRadius: BorderRadius.circular(defBorderRadius),
               ),
               child: Padding(
                 padding: const EdgeInsets.all(defPadding / 2),
                 child: Text(
                   'Paid',
-                  style: TextStyle(color: Color(0xff008236)),
+                  style: TextStyle(color: lightGreenTextColor),
                 ),
               ),
             ),
