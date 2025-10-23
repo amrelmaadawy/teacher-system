@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/components/custom_drop_down_menu.dart';
+import 'package:teacher_system/core/components/custom_students_count_row.dart';
 import 'package:teacher_system/core/components/custom_text_form_field.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/core/utils/app_size.dart';
@@ -42,7 +43,7 @@ class _AttendanceViewState extends State<AttendanceView> {
             },
             keyboardType: TextInputType.datetime,
           ),
-          SizedBox(height: 7),
+          SizedBox(height: 10),
 
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -66,6 +67,8 @@ class _AttendanceViewState extends State<AttendanceView> {
               ),
             ],
           ),
+          SizedBox(height: 10),
+          CustomStudentsCountRow(),
         ],
       ),
     );
