@@ -39,6 +39,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   salomon_bottom_bar: ^3.3.2
+  dropdown_button2: ^2.3.9
 
 dev_dependencies:
   flutter_test:

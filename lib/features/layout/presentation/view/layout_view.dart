@@ -34,7 +34,6 @@ class _HomeScreenState extends State<LayoutView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       floatingActionButton: FloatingActionButton.extended(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadiusGeometry.circular(defBorderRadius),
@@ -82,7 +81,7 @@ class _HomeScreenState extends State<LayoutView> {
             selectedColor: lightBottonColor,
           ),
           SalomonBottomBarItem(
-            icon: const Icon(Icons.check_circle_outline),
+            icon: const Icon(Icons.how_to_reg),
             title: Text(S.of(context).Attendance),
             selectedColor: lightBottonColor,
           ),
