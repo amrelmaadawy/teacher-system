@@ -13,4 +13,6 @@ const lightGreenBorderColor = Color(0xffb9f8cf);
 const lightRedBorderColor = Color(0xffffc9c9);
 const lightRedBackgroundColor = Color(0xfffef2f2);
 const lightRedTextColor = Color(0xffe70413);
+const lightGreenSwitchColor = Color(0xff00a63e);
+
 const lightWhiteColor = Colors.white;
