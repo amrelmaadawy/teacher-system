@@ -5,8 +5,9 @@ import 'package:teacher_system/core/components/custom_students_count_row.dart';
 import 'package:teacher_system/core/components/custom_text_form_field.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/core/utils/app_size.dart';
-import 'package:teacher_system/features/attendance/presentation/views/widgets/student_attendance_card.dart';
-import 'package:teacher_system/features/attendance/presentation/views/widgets/today_attendace_rate.dart';
+import 'package:teacher_system/features/attendance/presentation/widgets/student_attendance_card.dart';
+import 'package:teacher_system/features/attendance/presentation/widgets/today_attendace_rate.dart';
+import 'package:teacher_system/generated/l10n.dart';
 
 class AttendanceView extends StatefulWidget {
   const AttendanceView({super.key});
@@ -28,7 +29,7 @@ class _AttendanceViewState extends State<AttendanceView> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Mark student attendance for today',
+                  S.of(context).MarkStudentAttendanceForToday,
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w500,
@@ -43,7 +44,7 @@ class _AttendanceViewState extends State<AttendanceView> {
                   ),
                   controller: dateController,
                   text: '',
-                  labelText: 'Date',
+                  labelText: S.of(context).Date,
                   validator: (i) {
                     return null;
                   },
@@ -55,7 +56,7 @@ class _AttendanceViewState extends State<AttendanceView> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     CustomDropDownMenu(
-                      hintText: 'All Classes',
+                      hintText: S.of(context).AllClasses,
                       width: MediaQuery.of(context).size.width * 0.6,
                       items: ['All Classes', 'Grade 3', 'Grade 4'],
                       onChanged: (String? value) {},
@@ -67,7 +68,7 @@ class _AttendanceViewState extends State<AttendanceView> {
                         backgroundColor: lightGreenTextColor,
                       ),
                       child: Text(
-                        'Mark All',
+                        S.of(context).MarkAll,
                         style: TextStyle(color: lightWhiteColor, fontSize: 16),
                       ),
                     ),
@@ -90,11 +91,11 @@ class _AttendanceViewState extends State<AttendanceView> {
           SliverToBoxAdapter(
             child: Column(
               children: [
-                          SizedBox(height: 10),
+                SizedBox(height: 10),
 
                 CustomElevatedButton(
                   onPressed: () {},
-                  text: 'Save Attendance',
+                  text: S.of(context).SaveAttendance,
                 ),
               ],
             ),

@@ -118,5 +118,17 @@
     "SelectGrade":"Select Grade",
     "@SelectGrade": {},
     "Cancel":"Cancel",
-    "@Cancel": {}
+    "@Cancel": {},
+    "MarkStudentAttendanceForToday":"Mark student attendance for today",
+    "@MarkStudentAttendanceForToday": {},
+    "Date":"Date",
+    "@Date": {},
+    "AllClasses":"All Classes",
+    "@AllClasses": {},
+    "MarkAll":"Mark All",
+    "@MarkAll": {},
+    "SaveAttendance":"Save Attendance",
+    "@SaveAttendance": {},
+    "TodayAttedanceRate":"Today Attedance Rate",
+    "@TodayAttedanceRate": {}
 }

@@ -538,6 +538,51 @@ class S {
   String get Cancel {
     return Intl.message('Cancel', name: 'Cancel', desc: '', args: []);
   }
+
+  /// `Mark student attendance for today`
+  String get MarkStudentAttendanceForToday {
+    return Intl.message(
+      'Mark student attendance for today',
+      name: 'MarkStudentAttendanceForToday',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Date`
+  String get Date {
+    return Intl.message('Date', name: 'Date', desc: '', args: []);
+  }
+
+  /// `All Classes`
+  String get AllClasses {
+    return Intl.message('All Classes', name: 'AllClasses', desc: '', args: []);
+  }
+
+  /// `Mark All`
+  String get MarkAll {
+    return Intl.message('Mark All', name: 'MarkAll', desc: '', args: []);
+  }
+
+  /// `Save Attendance`
+  String get SaveAttendance {
+    return Intl.message(
+      'Save Attendance',
+      name: 'SaveAttendance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Today Attedance Rate`
+  String get TodayAttedanceRate {
+    return Intl.message(
+      'Today Attedance Rate',
+      name: 'TodayAttedanceRate',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

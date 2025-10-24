@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "Active": MessageLookupByLibrary.simpleMessage("Active"),
     "AddPayment": MessageLookupByLibrary.simpleMessage("Add Payment"),
     "AddStudent": MessageLookupByLibrary.simpleMessage("Add Student"),
+    "AllClasses": MessageLookupByLibrary.simpleMessage("All Classes"),
     "AlreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Already Have An Account?",
     ),
@@ -40,6 +41,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "CreateAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "CreatePassword": MessageLookupByLibrary.simpleMessage("Create a Password"),
     "DashBoard": MessageLookupByLibrary.simpleMessage("DashBoard"),
+    "Date": MessageLookupByLibrary.simpleMessage("Date"),
     "EmailAddress": MessageLookupByLibrary.simpleMessage("Email Address"),
     "EmailorPhone": MessageLookupByLibrary.simpleMessage("Email or Phone"),
     "EnterEmailAddress": MessageLookupByLibrary.simpleMessage(
@@ -83,7 +85,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "ManageAndTrackYourStudents": MessageLookupByLibrary.simpleMessage(
       "Manage and track your students",
     ),
+    "MarkAll": MessageLookupByLibrary.simpleMessage("Mark All"),
     "MarkAttendance": MessageLookupByLibrary.simpleMessage("Mark Attendance"),
+    "MarkStudentAttendanceForToday": MessageLookupByLibrary.simpleMessage(
+      "Mark student attendance for today",
+    ),
     "MonthlyIncome": MessageLookupByLibrary.simpleMessage("Monthly Income"),
     "NewToTeacherSystem": MessageLookupByLibrary.simpleMessage(
       "New To Teacher System?",
@@ -102,6 +108,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "Present": MessageLookupByLibrary.simpleMessage("Present"),
     "QuickActions": MessageLookupByLibrary.simpleMessage("Quick Actions"),
     "Registeras": MessageLookupByLibrary.simpleMessage("Register as"),
+    "SaveAttendance": MessageLookupByLibrary.simpleMessage("Save Attendance"),
     "SearchStudents": MessageLookupByLibrary.simpleMessage("Search Students"),
     "SelectGrade": MessageLookupByLibrary.simpleMessage("Select Grade"),
     "SendResetLink": MessageLookupByLibrary.simpleMessage("Send Reset Link"),
@@ -113,6 +120,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "StudentName": MessageLookupByLibrary.simpleMessage("Student Name *"),
     "StudentPhoneNumber": MessageLookupByLibrary.simpleMessage("PhoneNumber *"),
     "Students": MessageLookupByLibrary.simpleMessage("Students"),
+    "TodayAttedanceRate": MessageLookupByLibrary.simpleMessage(
+      "Today Attedance Rate",
+    ),
     "TodaysSummary": MessageLookupByLibrary.simpleMessage("Todays Summary"),
     "Total": MessageLookupByLibrary.simpleMessage("Total"),
     "TotalStudents": MessageLookupByLibrary.simpleMessage("Total Students"),

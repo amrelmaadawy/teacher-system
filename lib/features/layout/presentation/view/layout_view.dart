@@ -81,7 +81,7 @@ class _HomeScreenState extends State<LayoutView> {
             selectedColor: lightBottonColor,
           ),
           SalomonBottomBarItem(
-            icon: const Icon(Icons.how_to_reg),
+            icon: const Icon(Icons.how_to_reg_outlined),
             title: Text(S.of(context).Attendance),
             selectedColor: lightBottonColor,
           ),

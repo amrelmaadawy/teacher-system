@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:teacher_system/core/utils/app_colors.dart';
 import 'package:teacher_system/core/utils/app_size.dart';
+import 'package:teacher_system/generated/l10n.dart';
 
 class TodayAttendaceRate extends StatelessWidget {
   const TodayAttendaceRate({
@@ -23,7 +24,7 @@ class TodayAttendaceRate extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  'Today Attedance Rate',
+                  S.of(context).TodayAttedanceRate,
                   style: TextStyle(
                     color: lightMainTextColor,
                     fontSize: 15,
